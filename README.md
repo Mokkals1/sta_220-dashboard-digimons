@@ -1,5 +1,6 @@
 # sta_220-dashboard
 Repository for my Dashboard Data
+
 ##What is this?
 This is a dashboard on all the types of Digimon. It allows people especially people who have played 
 “Digimon Story: Cyber Sleuth” which released for Playstation Vita in 2015 and Playstation 4 in 2016
