@@ -7,6 +7,7 @@ This is a dashboard on all the types of Digimon. It allows people especially peo
 to examine each digimon's abilities and craft the ultimate digimon team.
 
 ##Where did this data come from?
+
 Source: Kaggle, Rachael Tatman, 2017 File: DigiDB_digimonlist.csv
 ## How do I run it?
 Open sta220-dashboard_where2live.Rproj, then run scripts/01_import.R.
