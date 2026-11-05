@@ -1,0 +1,5 @@
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+digimon_list <- read_csv("DigiDB_digimonlist.csv")
+ggplot(digimon_list, aes(x = 'Lv50 HP', y - 'Lv50 SP')) + geom_col()
