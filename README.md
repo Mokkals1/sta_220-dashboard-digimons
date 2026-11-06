@@ -1,4 +1,4 @@
-# sta_220-dashboard
+# sta_220-dashboard_digimons
 Repository for my Dashboard Data
 
 ##What is this?
