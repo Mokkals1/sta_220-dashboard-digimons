@@ -26,6 +26,19 @@ ggplot(average_memory_by_stage, aes(x = Stage, y = Average_Memory)) +
     panel.grid.major.x = element_blank(), # Keeps grid lines only on the y-axis
     panel.grid.minor = element_blank()
   )
+
+ggplot(average_memory_by_stage, aes(x = Stage, y = Average_Memory)) +
+  geom_point(color = "orange") +
+  labs(
+    
+    title = "Average Memory by Digimon Stage",
+    x = "Stage",
+    
+    y = "Average Memory"
+  ) +
+  theme_minimal()
+
+
 # Creating dataframe between HP and SP
 relationship_between_HP_SP <- digimon_list |> 
   select(`Lv50 HP`, `Lv50 SP`)
