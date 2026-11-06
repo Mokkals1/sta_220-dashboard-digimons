@@ -20,4 +20,5 @@ data/: raw files, never edited by hand, as well as edited files.
 scripts/: run in order by number.
 output/: made by the scripts.
 ## Who made it, and when was it last updated?
-Sahoj Mokkala, 11/1/2026
+Sahoj Mokkala, Created: 11/1/2026
+Updated: 11/6/2026

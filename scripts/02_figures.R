@@ -43,4 +43,3 @@ ggplot(relationship_between_HP_SP, aes(x = `Lv50 HP`, y = `Lv50 SP`)) +
   ) +
   theme_minimal()
   
-
