@@ -38,8 +38,8 @@ ggplot(relationship_between_HP_SP, aes(x = `Lv50 HP`, y = `Lv50 SP`)) +
     title = "Relationship between HP and SP",
     x = "HP",
     
-    y = "SP"
-    caption = "Source: Digimon Database"
+    y = "SP",
+    caption = "Source: Digimon Database by Rachel Tatman"
   ) +
   theme_minimal()
   
