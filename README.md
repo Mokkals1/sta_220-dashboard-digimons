@@ -5,7 +5,7 @@ Repository for my Dashboard Data
 This is a dashboard on all the types of Digimon. It allows people especially people who have played 
 “Digimon Story: Cyber Sleuth” which released for Playstation Vita in 2015 and Playstation 4 in 2016
 to examine each digimon's abilities and craft the ultimate digimon team. This data was collected by Rachel Tatman
-who Rachel Ttaman who is an enthusiast in the field. He is able to c
+who Rachel Tataman who is an enthusiast in the field. She updated this data last 9 years ago when the last update of Digimon Story: Sleuth dropped.
 
 ##Where did this data come from?
 Source: Kaggle, Rachael Tatman, 2017 File: DigiDB_digimonlist.csv
