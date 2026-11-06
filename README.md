@@ -14,6 +14,7 @@ Open sta220-dashboard.Rproj, then run scripts/01_import.R and set working direct
 ## What does each script do?
 01_import.R Converts the source data table into a usable dataset called
 digimon_list.csv – which can be found in data.
+02_figures.R displays code that plots various bar charts and scatterplots based on the variables in the datasets.
 ## What is in each folder?
 data/: raw files, never edited by hand, as well as edited files.
 scripts/: run in order by number.
