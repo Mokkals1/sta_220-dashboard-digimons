@@ -10,8 +10,7 @@ to examine each digimon's abilities and craft the ultimate digimon team.
 
 Source: Kaggle, Rachael Tatman, 2017 File: DigiDB_digimonlist.csv
 ## How do I run it?
-Open sta220-dashboard_where2live.Rproj, then run scripts/01_import.R.
-Made with R version X and tidyverse version X.
+Open sta220-dashboard.Rproj, then run scripts/01_import.R and set working directory to archive2() in data.
 ## What does each script do?
 01_import.R Converts the source data table into a usable dataset called
 digimon_list.csv – which can be found in data.
