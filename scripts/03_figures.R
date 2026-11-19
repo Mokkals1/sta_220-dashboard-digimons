@@ -55,4 +55,18 @@ ggplot(relationship_between_HP_SP, aes(x = `Lv50 HP`, y = `Lv50 SP`)) +
     caption = "Source: Digimon Database by Rachel Tatman"
   ) +
   theme_minimal()
+
+# Create a table between Digimon Stage and LV 50 attack
+relationship_between_Digimon_stage_and_lv_50_attack <- digimon_list |> 
+  select(Stage, `Lv50 Atk`)
+ggplot(relationship_between_Digimon_stage_and_lv_50_attack, aes(x = Stage, y = `Lv50 Atk`)) +
+  geom_point(color = "darkblue")+
+  labs(
+    title = "Relationship between Stage and Attack",
+    x = "Stage",
+    
+    y = "Attack",
+    caption = "Source: Digimon Database by Rachel Tatman"
+  ) +
+  theme_minimal()
   
