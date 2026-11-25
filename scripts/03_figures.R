@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 
 
-digimon_list <- read_csv("DigiDB_digimonlist.csv")
+digimon <- read_delim("Digimon.csv", delim = ";", show_col_types = FALSE)
 
 average_memory_by_stage <- digimon_list |> 
   select(Stage, Memory) |> 
@@ -57,9 +57,9 @@ ggplot(relationship_between_HP_SP, aes(x = `Lv50 HP`, y = `Lv50 SP`)) +
   theme_minimal()
 
 # Create a table between Digimon Stage and LV 50 attack
-relationship_between_Digimon_stage_and_lv_50_attack <- digimon_list |> 
-  select(Stage, `Lv50 Atk`)
-ggplot(relationship_between_Digimon_stage_and_lv_50_attack, aes(x = Stage, y = `Lv50 Atk`)) +
+relationship_between_Digimon_stage_and_lv_50_attack <- digimon |> 
+  select(Stage, `ATK lvl 50`)
+ggplot(relationship_between_Digimon_stage_and_lv_50_attack, aes(x = Stage, y = `ATK lvl 50`)) +
   geom_point(color = "darkblue")+
   labs(
     title = "Relationship between Stage and Attack",
@@ -70,3 +70,29 @@ ggplot(relationship_between_Digimon_stage_and_lv_50_attack, aes(x = Stage, y = `
   ) +
   theme_minimal()
   
+
+relationship_between_Digimon_stage_and_lv_1_attack <- digimon |> 
+  select(Stage, `ATK lvl 1`)
+ggplot(relationship_between_Digimon_stage_and_lv_1_attack, aes(x = Stage, y = `ATK lvl 1`)) +
+  geom_point(color = "pink")+
+  labs(
+    title = "Relationship between Stage and Attack",
+    x = "Stage",
+    
+    y = "Attack",
+    caption = "Source: Digimon Database by Rachel Tatman"
+  ) +  theme_minimal()
+
+relationship_between_Digimon_stage_and_lv_99_attack <- digimon |> 
+  select(Stage, `ATK lvl 99`)
+ggplot(relationship_between_Digimon_stage_and_lv_99_attack, aes(x = Stage, y = `ATK lvl 99`)) +
+  geom_point(color = "lightblue")+
+  labs(
+    title = "Relationship between Stage and Attack",
+    x = "Stage",
+    
+    y = "Attack",
+    caption = "Source: Digimon Database by Rachel Tatman"
+  ) +
+  theme_minimal()
+
